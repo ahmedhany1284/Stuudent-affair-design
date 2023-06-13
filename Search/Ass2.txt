@@ -1,0 +1,39 @@
+<html>
+
+<head> 
+<style>
+         table, th, td {
+            border: 1px solid black;
+         }
+      </style>
+<button type = "">HOME PAGE </button>
+</head>
+<body> 
+<div class = "Search">
+<form>
+<h1> Search For Active Students </h1>
+<input type ="Search" placeholder = "search...." name = "Search"/>
+<button type = "submit">Search </button>
+</form>
+</div>
+</br>
+<table>
+  <tr>
+    <th>Student Name</th>
+    <th>ID</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Ahmed Mohamed</td>
+    <td>  20200000</td>
+    <td>Active</td>
+  </tr>
+  <tr>
+    <td>Ahmed Mohamed</td>
+    <td>20200001</td>
+    <td>Active</td>
+  </tr>
+</table>
+ 
+</body>
+</html>

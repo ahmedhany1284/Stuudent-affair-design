@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Affairs</title>
+    <link rel="stylesheet" href="Style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="navigation_bar">
+        <img class="'logo" src="../Logo.png" alt="" />
+        <ul>
+          <li><a href="../Search/Search.html">Search</a></li>
+          <li><a href="../Phase1.html">Home Page</a></li>
+          <li>
+            <a href="../Active Status/Active_Status.html ">Active Status</a>
+          </li>
+          <li><a href="../Log_in/login_file.html">Log in</a></li>
+          <li><a href="../Register/Register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <br /><br /><br />
+      <header>
+        <a href="x" class="shape"></a>
+      </header>
+      <form method="get" action="../login.html">
+        <div>
+          <label>Name</label><br />
+          <input
+            type="text"
+            placeholder="Enter your name "
+            required
+            name="name"
+            id="input_name"
+            onkeyup="validationName()"
+          />
+          <span id="name-error"></span>
+        </div>
+        <br />
+        <div>
+          <label>Student ID</label><br />
+          <input
+            type="number"
+            placeholder="Enter your ID "
+            required
+            name="id"
+            id="input_id"
+            onkeyup="validationID()"
+          />
+          <span id="studentId-error"></span>
+        </div>
+        <br />
+        <div>
+          <label>GPA</label><br />
+          <input
+            type="number"
+            placeholder="Enter GPA"
+            required
+            name="GPA"
+            required
+            name="id"
+            id="input_GPA"
+            onkeyup="validationGPA()"
+          />
+          <span id="GPA-error"></span>
+        </div>
+        <br />
+        <div>
+          <label>Date of Birth </label
+          ><input
+            type="date"
+            placeholder="Enter Day"
+            required
+            name="day"
+            required
+            name="id"
+            id="input_date"
+            onkeyup="validationName()"
+          />
+          <span id="date-error"></span>
+        </div>
+        <div action="" method="POST">
+          <label>Gender:</label>
+          <br />
+          <input type="radio" name="gender" value="m" onclick="send();" />Male
+          <br />
+          <input type="radio" name="gender" value="f" onclick="send();" />Female
+          <br />
+          <div id="msg">
+            <span style="color: red">You must select your gender!</span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label>Level</label><br />
+          <label>1</label>
+          <input type="radio" name="gender" value="1" onclick="sendlvl();" />
+          <label>2</label>
+          <input type="radio" name="level" value="2" onclick="sendlvl();" />
+          <label>3</label>
+          <input type="radio" name="level" value="3" onclick="sendlvl();" />
+          <label>4</label>
+          <input type="radio" name="level" value="4" onclick="sendlvl();" />
+          <div id="msg2">
+            <span style="color: red">You must select your level!</span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label>Active</label>
+          <input
+            type="radio"
+            required
+            name="status"
+            value="active"
+            onclick="send_status();"
+          />
+          <label>Inactive</label>
+          <input
+            type="radio"
+            required
+            name="status"
+            value="inactive"
+            onclick="send_status();"
+          />
+          <div id="msg3">
+            <span style="color: red">You must select your level!</span>
+          </div>
+        </div>
+        <br />
+        <div>
+          <label>Department</label><br />
+          <input
+            type="text"
+            placeholder="Disabled"
+            required
+            name="department"
+            required
+            name="id"
+            id="input_dep"
+            onkeyup="validationDep()"
+            disabled
+          />
+          <span id="department-error"></span>
+        </div>
+        <br />
+        <div>
+          <label>email</label><br />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            name="email"
+            required
+            name="id"
+            id="input_email"
+            onkeyup="validationEmail()"
+          />
+          <span id="email-error"></span>
+        </div>
+        <br />
+        <div>
+          <label>Mobile number</label><br />
+          <input
+            type="tele"
+            placeholder="Enter your mobile number"
+            required
+            name="Mobile number"
+            required
+            name="id"
+            id="input_mobile"
+            onkeyup="validationMobile()"
+          />
+          <span id="mobile-error"></span>
+        </div>
+        <br />
+        <button type="submit" value="Register">
+          <a href="../Phase1.html" id="input_form" onkeyup="validationform()"
+            >Register</a
+          >
+        </button>
+        <span id="submit-error"></span>
+        <!-- <input type="submit" value="Register"> -->
+        <input type="reset" value="Reset" onclick="reset_msg();" />
+        <button type="submit" value="Delete" style="color: white">
+          Delete
+        </button>
+      </form>
+    </div>
+    <script src="phase2.js"></script>
+  </body>
+</html>
